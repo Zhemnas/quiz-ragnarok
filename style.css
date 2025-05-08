@@ -67,3 +67,71 @@ button#restart-btn {
   font-size: 1.2rem;
   margin-top: 20px;
 }
+
+/* Mantém apenas o essencial para o visual de caixa de diálogo */
+
+/* --- Caixa de diálogo estilo Ragnarok --- */
+.dialog-box {
+  background: #fff;
+  border: 2px solid #bcbcbc;
+  border-radius: 6px;
+  box-shadow: 2px 2px 8px #888;
+  color: #222;
+  font-family: Verdana, Arial, sans-serif;
+  padding: 18px 18px 8px 18px;
+  width: 350px;
+  margin: 40px auto;
+  position: relative;
+}
+
+.dialog-text {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  white-space: pre-line;
+}
+
+.dialog-options {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0 24px 0;
+}
+
+.dialog-options li {
+  padding: 6px 12px;
+  margin-bottom: 4px;
+  border-radius: 3px;
+  cursor: pointer;
+  background: transparent;
+  color: #222;
+  border: none;
+  transition: background 0.2s, color 0.2s;
+}
+
+.dialog-options li:hover,
+.dialog-options .dialog-selected {
+  background: #cce0ff;
+  color: #003366;
+}
+
+.dialog-btn {
+  padding: 2px 18px;
+  margin-right: 8px;
+  border: 1px solid #bcbcbc;
+  background: #f4f4f4;
+  border-radius: 3px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 1px 1px 2px #ccc;
+}
+
+.dialog-btn-cancel {
+  background: #eaeaea;
+  color: #666;
+}
+
+body {
+  background: #eaeaea;
+  color: #222;
+  font-family: Verdana, Arial, sans-serif;
+  overflow: auto;
+}
