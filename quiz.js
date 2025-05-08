@@ -39,58 +39,170 @@ const quizData = {
   },
   perguntas: [
     {
-      pergunta: "Qual seu estilo de combate favorito?",
+      pergunta: "Com qual palavra você se identifica mais?",
       respostas: {
-        "Na linha de frente com espada e escudo": "espadachim",
-        "Lançando feitiços de longe": "mago",
-        "Atacando de arco com precisão": "arqueiro",
-        "Com furtividade e velocidade": "gatuno",
-        "Ajudando e curando aliados": "novico",
-        "Com armadilhas e truques engenhosos": "mercador",
+        Estudos: "mago",
+        Exercício: "espadachim gatuno",
+        Caridade: "novico",
+        Violencia: "gatuno",
       },
     },
     {
-      pergunta: "Em um grupo, qual papel você prefere?",
+      pergunta: "O que é mais importante pra você?",
       respostas: {
-        "Tanque, segurando os monstros": "espadachim",
-        "Controlar o campo com magia": "mago",
-        "Dar dano à distância com segurança": "arqueiro",
-        "Causar dano crítico e surpreender": "gatuno",
-        "Curar e dar suporte": "novico",
-        "Usar habilidades que afetam o dinheiro e o loot": "mercador",
+        Mudança: "mago",
+        Permanência: "novico",
       },
     },
     {
-      pergunta: "Qual sua maior qualidade como jogador?",
+      pergunta: "Como você se descreveria melhor?",
       respostas: {
-        "Resistência e coragem": "espadachim",
-        "Sabedoria e estratégia": "mago",
-        "Precisão e observação": "arqueiro",
-        "Agilidade e improviso": "gatuno",
-        "Empatia e cooperação": "novico",
-        "Autonomia e praticidade": "mercador",
+        Consumidor: "novico espadachim gatuno",
+        Vendedor: "mercador",
+        Produtor: "mago",
       },
     },
     {
-      pergunta: "Você prefere jogar...",
+      pergunta: "O que é mais importante para você?",
       respostas: {
-        "Na linha de frente com o time": "espadachim",
-        "Como um canhão de vidro poderoso": "mago",
-        "Mantendo distância e escolhendo alvos": "arqueiro",
-        "Sozinho, em velocidade": "gatuno",
-        "Ajudando todo mundo a sobreviver": "novico",
-        "Fazendo zeny enquanto luta": "mercador",
+        Fama: "gatuno",
+        Prudência: "novico",
       },
     },
     {
-      pergunta: "Se você fosse um item de Ragnarok, seria...",
+      pergunta: "O que é mais importante para você?",
       respostas: {
-        "Uma espada de duas mãos": "espadachim",
-        "Um cajado mágico ancestral": "mago",
-        "Um arco encantado": "arqueiro",
-        "Uma adaga venenosa": "gatuno",
-        "Uma varinha de cura": "novico",
-        "Uma carroça de itens raros": "mercador",
+        Teoria: "mago",
+        Experiência: "espadachim",
+      },
+    },
+    {
+      pergunta: "O que é mais importante para você?",
+      respostas: {
+        "O passado": "arqueiro",
+        "O presente": "mercador gatuno",
+        "O futuro": "mago",
+      },
+    },
+    {
+      pergunta: "É melhor morrer com honra do que viver uma vida submissa.",
+      respostas: {
+        Sim: "espadachim",
+        Não: "mercador gatuno",
+      },
+    },
+    {
+      pergunta: "Você se incomoda de ver alguém melhor do que você.",
+      respostas: {
+        Sim: "mercador",
+        Não: "novico",
+      },
+    },
+    {
+      pergunta: "Você tem medo de explorar lugares perigosos.",
+      respostas: {
+        Sim: "mago",
+        Não: "espadachim",
+      },
+    },
+    {
+      pergunta: "Você é um líder nato.",
+      respostas: {
+        Sim: "espadachim",
+        Não: "arqueiro",
+      },
+    },
+    {
+      pergunta:
+        "Ao explorar uma caverna, você encontrou um beco sem saída. Examinando a parede ao seu lado, você encontra uma alavanca com um aviso escrito 'Não Puxe'. Você puxa?",
+      respostas: {
+        Sim: "gatuno",
+        Não: "espadachim",
+      },
+    },
+    {
+      pergunta: "Você às vezes vê coisas que não existem.",
+      respostas: {
+        Sim: "novico",
+        Não: "mago",
+      },
+    },
+    {
+      pergunta: "Ao cair de um penhasco, você sente como se pudesse voar.",
+      respostas: {
+        Sim: "novico",
+        Não: "mago",
+      },
+    },
+    {
+      pergunta:
+        "Dinheiro fala. Eu poderia até comprar um ser humano se eu quisesse.",
+      respostas: {
+        Sim: "mercador",
+        Não: "arqueiro",
+      },
+    },
+    {
+      pergunta: "Ao manter uma rotina...",
+      respostas: {
+        "Me sinto como um robô.": "espadachim gatuno",
+        "Me sinto seguro e satisfeito.": "novico mago",
+        "Rotina... que rotina?": "arqueiro mercador",
+      },
+    },
+    {
+      pergunta:
+        "Ao passear no shopping, você encontra algo muito interessante em uma loja. O que você faz?",
+      respostas: {
+        "Penso se eu realmente preciso daquilo.": "arqueiro",
+        "Checo o preço.": "mercador",
+        "Compro sem pensar duas vezes.": "gatuno",
+      },
+    },
+    {
+      pergunta:
+        "Você é responsável por uma tarefa que requer trabalho em equipe. O que você faz?",
+      respostas: {
+        "Faço sozinho, mesmo se for mais difícil.": "mago",
+        "Peço ajuda aos outros.": "mercador",
+      },
+    },
+    {
+      pergunta:
+        "Você encontra uma garota desmaiada no meio da rua. O que você faz?",
+      respostas: {
+        "Levo ela até o hospital.": "novico",
+        "Considero minhas prioridades antes de agir.": "arqueiro espadachim",
+        "Finjo que não vi.": "mago mercador gatuno",
+      },
+    },
+    {
+      pergunta:
+        "Nas suas aventuras, você encontra uma 'Vestimenta Não-Identificada'. O que você faz?",
+      respostas: {
+        "Vejo a marca.": "mercador",
+        "Me pergunto 'será que alguém a perdeu?'": "novico",
+        "Busco o dono.": "mercador",
+        "Deixo onde está.": "mago",
+      },
+    },
+    {
+      pergunta:
+        "Você acaba falando 'mais do que deveria' no meio de uma conversa. O que você faz?",
+      respostas: {
+        "Finjo que era uma piada.": "gatuno",
+        "Mudo de assunto.": "espadachim",
+        "Analiso o que eu disse.": "mago",
+        "Peço desculpas sinceras.": "novico",
+      },
+    },
+    {
+      pergunta:
+        "Você está em viagem com sua(seu) parceira(o). Ela(e) pede para você comprar uma lembrança que não é particularmente necessária. O que você faz?",
+      respostas: {
+        "Compro a lembrança para ela(e)": "espadachim",
+        "Digo 'Não'.": "mercador",
+        "Prometo comprar 'na volta'.": "gatuno",
       },
     },
   ],
