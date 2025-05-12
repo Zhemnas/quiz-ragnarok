@@ -221,14 +221,16 @@ function showQuestion(index) {
 
   quizContainer.innerHTML = `
     <div class="dialog-box">
-      <div class="dialog-text">[Boarding Staff]\n${questionData.pergunta}</div>
+      <div class="dialog-text">[Instrutor]\n${questionData.pergunta}</div>
       <ul class="dialog-options">
         ${respostas
           .map(
             ([text], i) =>
-              `<li class="${i === 0 ? 'dialog-selected' : ''}" data-idx="${i}">${text}</li>`
+              `<li class="${
+                i === 0 ? "dialog-selected" : ""
+              }" data-idx="${i}">${text}</li>`
           )
-          .join('')}
+          .join("")}
       </ul>
       <div style="text-align: right;">
         <button class="dialog-btn" id="ok-btn">OK</button>
@@ -238,29 +240,30 @@ function showQuestion(index) {
   `;
 
   // Eventos de seleção
-  const optionElements = quizContainer.querySelectorAll('.dialog-options li');
+  const optionElements = quizContainer.querySelectorAll(".dialog-options li");
   optionElements.forEach((el, i) => {
     el.onclick = () => selectOption(i);
   });
 
-  document.getElementById('ok-btn').onclick = () => {
+  document.getElementById("ok-btn").onclick = () => {
     selectAnswer(respostas[selectedOptionIndex][1]);
   };
-  document.getElementById('cancel-btn').onclick = () => {
+  document.getElementById("cancel-btn").onclick = () => {
     restartQuiz();
   };
 
   // Teclado: seta para cima/baixo e Enter
   quizContainer.onkeydown = (e) => {
-    if (e.key === 'ArrowDown') {
+    if (e.key === "ArrowDown") {
       selectedOptionIndex = (selectedOptionIndex + 1) % respostas.length;
       updateSelectedOption();
       e.preventDefault();
-    } else if (e.key === 'ArrowUp') {
-      selectedOptionIndex = (selectedOptionIndex - 1 + respostas.length) % respostas.length;
+    } else if (e.key === "ArrowUp") {
+      selectedOptionIndex =
+        (selectedOptionIndex - 1 + respostas.length) % respostas.length;
       updateSelectedOption();
       e.preventDefault();
-    } else if (e.key === 'Enter') {
+    } else if (e.key === "Enter") {
       selectAnswer(respostas[selectedOptionIndex][1]);
     }
   };
@@ -269,9 +272,9 @@ function showQuestion(index) {
 }
 
 function updateSelectedOption() {
-  const optionElements = quizContainer.querySelectorAll('.dialog-options li');
+  const optionElements = quizContainer.querySelectorAll(".dialog-options li");
   optionElements.forEach((el, i) => {
-    el.classList.toggle('dialog-selected', i === selectedOptionIndex);
+    el.classList.toggle("dialog-selected", i === selectedOptionIndex);
   });
 }
 
@@ -297,17 +300,17 @@ function showResult() {
 
 const suspenseSteps = [
   {
-    text: 'Excelente! Obrigado por preencher o teste. Vou verificar suas respostas e te responderei em um momento.',
-    delay: 1600
+    text: "Excelente! Obrigado por preencher o teste. Vou verificar suas respostas e te responderei em um momento.",
+    delay: 1600,
   },
   {
-    text: 'Certo...',
-    delay: 1200
+    text: "Certo...",
+    delay: 1200,
   },
   {
-    text: 'Humm...',
-    delay: 1200
-  }
+    text: "Humm...",
+    delay: 1200,
+  },
 ];
 
 function showSuspenseStep(step) {
@@ -336,7 +339,7 @@ function showFinalResult() {
       </div>
     </div>
   `;
-  document.getElementById('restart-btn2').onclick = () => restartQuiz();
+  document.getElementById("restart-btn2").onclick = () => restartQuiz();
 }
 
 function restartQuiz() {
